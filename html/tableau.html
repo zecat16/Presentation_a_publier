@@ -1,0 +1,83 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Les tableaux</title>
+        <style>
+            table {
+                border-collapse: collapse;
+            }
+            
+            table tr td {
+                border:1px solid black;                
+            }
+        
+        </style>        
+    </head>
+
+    <body>
+        
+        <a href="../index.html">Retour</a> 
+        <br/><br/>
+        <table> <!-- Début du tableau -->
+            <tr> <!-- Première ligne -->
+                <td>Débit</td> <!-- Deux données -->
+                <td>100</td>
+            </tr>
+            <tr> <!-- seconde ligne -->
+                <td>Crédit</td>
+                <td>150</td>
+            </tr>    
+        </table> <!-- Fin du tableau -->
+        <br/>
+        <br/>
+    
+<p>colonnage vertical avec pied de tableau :</p>         
+        <table>
+            <Caption>Ligne comptable</Caption> <!-- Titre du tableau , inséré dans la bordure du tableau-->
+            <thead> <!-- Entête tableau ( possibilité de titre aussi )-->
+                <th>Mouvement</th>
+                <th>Somme</th>
+            </thead> 
+            <tbody> <!-- Corps tableau -->
+                <tr> 
+                    <td>Débit</td> 
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>Crédit</td>
+                    <td>150</td>
+                </tr>                    
+                
+            </tbody> 
+            <tfoot> <!-- Bas tableau -->
+                <td><Strong>Total</Strong></td>
+                <td>50</td>
+                
+            </tfoot> 
+            
+        </table>
+<p>colonnage horizontal :</p>        
+        <table>
+
+            <thead> <!-- Entête tableau ( possibilité de titre aussi )-->
+                <th>Ligne comptable , bis</th>
+            </thead> 
+            <tbody> <!-- Corps tableau -->
+                <tr> 
+                    <th>Mouvement</th>
+                    <td>Débit</td> 
+                    <td>Crédit</td>
+                </tr>
+                <tr>
+                    <th>Somme</th>
+                    <td>100</td>
+                    <td>150</td>
+                </tr>                    
+                
+            </tbody> 
+ 
+            
+        </table>
+    </body>    
+</html>

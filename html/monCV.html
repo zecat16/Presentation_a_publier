@@ -1,0 +1,134 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Le CV</title> 
+        <style>
+            ul {
+                display:flex;
+                flex-flow: row wrap;
+                justify-content: space-around;
+                align-content:space-between;
+                list-style: none;
+                padding:0;
+                            }
+            a {
+                display:block;
+                text-decoration: none;
+                color:black;
+       
+                            }
+            li {
+                /* display:inline-block;*/
+                background-color: burlywood;
+                border:1px solid black;
+                text-align: center;
+                padding:5px;
+                width:250px;
+                height:50px;
+            }
+            form {
+                background-color: burlywood;
+            }
+
+
+
+        </style>       
+    </head>
+
+    <body>
+        <a href="../index.html">Retour</a>
+        <br> 
+    <!-- Nom prénom ( titre important) -->
+    
+ 
+        <h1>Jean-Christophe Dupuy</h1>
+    <!-- Métier ( Titre secondaire ) -->
+        <h2><strong>Analyste Mainframe ( Mais ça, c'était avant ... )</strong></h2>
+    <!-- Paragraphe résumant -->
+        <p>J'ai plus de 25 ans d'expériences , j'ai travaillé généralement depuis les phases de conception jusqu'à la mise en production , en maitrise d'oeuvre , dans divers environnements grands systèmes ...</p>
+    <!-- Liste de contacts -->
+        <h3>Me contacter : </h3>
+        <div>    
+            <ul>
+                <li><strong>Fixe</strong> : 05 05 05 05 05</li>
+                <li><strong>Portable</strong> : 06 06 06 06 06</li>
+                <li><strong>Courriel</strong> :     
+                <a href="mailto:jxxxx@bbox.fr">jxxxx@bbox.fr</a></li>
+                <li><strong>Viadeo</strong> : <a href="https://www.viadeo.com/p/0027478chlo7jfm/edit"><img src="../images/viadeo.png"/></a> </li>
+            </ul>
+    <!-- Liens sociaux avec images sur https://wwww.iconfinder.com -->
+    
+            
+        </div>
+
+    
+    <!-- Tableau des expériences pros -->
+         <br/>   
+         <br/> 
+         <h3>Ma vie professionnelle : </h3>  
+         <br/>   
+            <table>
+            <Caption>Mes expériences professionnelles</Caption> <!-- Titre du tableau -->
+            <thead> <!-- Entête tableau -->
+                <th>Employeur</th>
+                <th>Date début</th>
+                <th>Date fin</th>
+                <th>Métier</th>
+            </thead> 
+            <tbody> <!-- Corps tableau -->
+                <tr> 
+                    <td>Apside TOP</td> 
+                    <td>2011</td>
+                    <td></td>
+                    <td>Analyste</td>
+                </tr>
+                <tr>
+                    <td>Urgence Informatique Europe</td>
+                    <td>2005</td>
+                    <td>2011</td>
+                    <td>Analyste</td>
+                </tr>     
+                <tr>
+                    <td>Ausy</td>
+                    <td>2000</td>
+                    <td>2005</td>
+                    <td>Ingénieur d'études</td>
+                </tr>                
+                
+            </tbody> 
+            
+        </table>
+    
+    
+    <!-- Formulaire de contact avec nom , mail , message -->
+         <br/>   
+         <h3>Me contacter : </h3>   
+         <br/> 
+     
+        <form action="message.php">
+            <fieldset>
+                <legend>Contacts</legend>
+                <label>Votre nom :</label>
+                <input required placeholder="Votre nom"/>
+                <br/>
+                <label>Votre email :</label>
+                <input required type="email" placeholder="adresse@mail"/>   
+                <br/>
+                <label>Votre message :</label>
+                <textarea cols="50" rows="5" placeholder="Votre description">               </textarea> 
+                <br/>
+                <input type=submit value="Valider"/>
+                <input type=reset value="Re-saisir"/>
+            </fieldset>
+            
+        </form>         
+    
+    
+    <!-- En gras sur les choses importantes -->
+    <!-- Commentaires , indentations ... -->
+   
+   
+   
+    </body>    
+</html>

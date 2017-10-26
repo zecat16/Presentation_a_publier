@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+       <title>Vérification de code secret</title>
+       <!-- <script src="script.js"></script> -->
+        
+    </head>
+    
+    <body>
+      
+       <p id="premier">truc</p>
+       <p class="myCLASS">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, corporis, omnis. Natus amet veritatis, perferendis numquam cumque tempora neque quo. Optio adipisci voluptatem, aut cum incidunt facilis ratione. Excepturi, facere!</p>
+       <p class="myCLASS">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, est, vero? Minima illo excepturi quas ratione, veniam laudantium, quia quod modi voluptates aliquam tenetur sint at, iure qui eius placeat.</p>
+        
+    </body>
+    
+    <script>
+        var premierPar = document.getElementById("premier");
+        console.log(premierPar);
+        var parClasses = document.getElementsByClassName("myCLASS");
+        console.log(parClasses);  
+        var parTagName = document.getElementsByTagName("p");
+        console.log(parTagName);  
+        console.log(parClasses[1]);
+        
+        // changer le text d'une page
+        premierPar.textContent += " changé en machin";
+        
+        premierPar.innerHTML += "<br>Si vis <strong>pacem</strong> para <em>bellum</em>";
+        
+        // modification de style
+        parClasses[1].style.color = "green";
+        parClasses[0].style.fontSize = "25px";
+        parClasses[1].style.textDecoration = "underline";
+
+        // changement d'attribut (id  / class )
+        premierPar.id += " newid";
+        console.log(premierPar);     
+        parClasses[1].classList = "texte";
+        console.log(parClasses);
+        
+    </script>
+    
+</html>

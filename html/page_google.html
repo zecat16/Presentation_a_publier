@@ -1,0 +1,128 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Les titres</title>  
+        <style>
+            
+            * {
+                box-sizing: border-box
+            }
+            body {
+                font-family: sans-serif;
+                font-size: 0.8rem;
+                margin: 0;
+                padding:0;
+            }
+            
+            ul {
+                list-style: none;
+                padding: 0;
+                }
+            
+            li {
+                padding-left:15px;
+            }
+            
+            a {
+                text-decoration: none;
+                color:black;
+            }
+            
+            header ul {
+                display:flex;
+                flex-direction: row;
+                justify-content: flex-end;
+            }
+            
+            .bgBlue a{
+                background-color:cornflowerblue;
+                color: white;
+                padding:12px;
+                font-weight: 800;
+            }
+            
+            main {
+                text-align: center;
+                margin-top:100px;
+                
+            }
+            
+            [type="search"] {
+                display:block;
+                margin: 5px auto;
+                width: 500px;
+                height: 30px;
+                
+            }
+            
+            [type="submit"] {
+                border:none;
+                background-color: #EEE;
+                padding:10px;
+                margin-top: 20px;
+                font-weight:700px;
+                color: #555;
+            }
+            
+            footer {
+                
+                background-color: #EEE;
+                position:fixed;
+                bottom: 0px;
+                width: 100%;
+            }
+            
+            footer ul {
+                display:flex;
+            }
+            
+        
+            .droite {
+
+                margin-right: auto;
+            }
+            
+            .param {
+                margin-right: 10px;
+            }
+        </style>      
+    </head>
+
+    <body>
+       
+        <header>
+            <ul>
+                <li> <a href="#">Gmail</a></li>
+                <li> <a href="#">Images</a></li>
+                <li class="bgBlue"> <a href="#">Connexion</a></li>
+
+            </ul>
+            
+        </header>
+        
+         <main>
+            
+             <img src="https://www.google.fr/images/branding/googlelogo/2x/googlelogo_color_120x44dp.png" alt="doodle Google">
+             
+             <form action="recherche.php">
+                 <input  type="search">
+                 <input type="submit" value="Recherche Google">
+                 <input type="submit" value="J'ai de la chance">
+             </form>
+             
+         </main> 
+         
+         <footer>
+             <ul>
+                 <li><a href="#">Publicité</a></li>
+                 <li><a href="#">Entreprise</a></li>
+                 <li class="droite"><a href="#">A propos</a></li>
+                 <li><a href="#">Confidentialité</a></li>
+                 <li><a href="#">Conditions</a></li>
+                 <li class="param"><a href="#">Paramètres</a></li>
+             </ul>
+         </footer>
+
+    </body>    
+</html>

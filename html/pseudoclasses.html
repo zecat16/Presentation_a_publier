@@ -1,0 +1,81 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>visage</title>  
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                background-color:grey;
+            }
+            .cadre {
+
+                height: 400px;
+                width: 400px;
+                margin:20px;
+
+                background-color: white;
+  
+            }
+            .survol:hover {
+                background-color:blue;
+                color:white;
+            }
+            
+            .selection:focus {
+                text-transform: uppercase;
+                border: 5px solid green;
+            }
+            
+            .activation:active {
+                color:green;
+                font-weight:900;
+            }
+             p:first-child{
+             color: red;
+             }
+
+        </style>      
+    </head>
+
+    <body>
+     
+        <div class="cadre survol">
+            <h1>:Hover</h1>
+            <p>Le CSS s'active au survol</p>
+        </div>      
+        <div class="cadre">
+            <h1>:Focus</h1>
+            <a class="selection" href="http://www.qwant.fr" target="_blank" >s'active quand on le sélectionne ou quand on y passe avec la touche TAB. Comme un lien ou un input par exemple</a>
+            <br>
+            <input class="selection" type="text">
+        </div>  
+ 
+        <div class="cadre">
+            <h1>:Active</h1>
+            <a class="activation" href="http://www.qwant.fr" target="_blank">s'active quand on clique dessus , pour un lien ou un bouton</a>
+            <br>
+            <input class="activation" type="submit" value="Valider">
+        </div> 
+         <div class="cadre">
+             <h1>:first-child</h1>
+             <!-- c'est le premier P mais pas le premier fils -> h1 -->
+             <p>
+             Permet de séléction le premier fils
+             </p>
+             <h3>Exemple</h3>
+             <section>
+             <p> premier paragraphe...</p>
+             <p>Lorem ipsum...</p>
+             </section>
+             <section>
+             <h2>test</h2>
+             <p> premier paragraphe...</p>
+             <p>Lorem ipsum...</p>
+             </section>
+         </div> 
+
+    </body>    
+</html>

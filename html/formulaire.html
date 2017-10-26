@@ -1,0 +1,74 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Mes formulaires</title>       
+    </head>
+
+    <body>
+       
+        <a href="../index.html">Retour</a>
+        <form action="inscription.php">
+            <fieldset>
+                <legend>Inscription</legend>
+                <label>Nom :</label>
+                <input placeholder="Votre nom"/>
+                <br/>
+                <label>Email :</label>
+                <input required type="email" placeholder="adresse@mail"/>   
+                <br/>
+                <label>Mot de passe :</label>
+                <input required type="password" /> 
+                <br/>
+                <label>Description :</label>
+                <textarea cols="30" rows="3" placeholder="Votre description">               </textarea> 
+                <br/>
+                <label>Sexe :</label>
+                <input type="radio" name="sexe">Homme
+                <input type="radio" name="sexe">Femme
+                <br/>
+                <label>Choix :</label>
+                <input type="checkbox">Photographie
+                <input type="checkbox">Cinéma
+                <input type="checkbox">Jeux vidéo
+                <br/>
+                <label>Votre âge :</label>
+                <select>
+                    <option>0-18</option> 
+                    <option>19-30</option> 
+                    <option>31-50</option> 
+                    <option>51+</option> 
+                </select>
+                <br/>
+                <!-- Début tags HTML5 -->
+                <br>
+                <label>Recherche :</label>
+                <input type="search" placeholder="recherche">
+                <br>
+                <label>URL :</label>
+                <input type="url">
+                <br>
+                <label>Nombre :</label>
+                <input type="number" min=1 max=10>
+                <br>
+                <label>Slider :</label>
+                <input type="range" value=10 min=0 max=50 step=10>
+                <br>
+                <label>Couleurs :</label>
+                <input type="color" value="#00FFDD">
+                <br>
+                <label>Date :</label>
+                <input type="date" min="2016-01-01" max="2017-01-01" >
+                <br>
+                <label>Mois :</label>
+                <input type="month" min=2016-01 max=2017-01>
+                <!-- Fin tags HTML5 -->
+                <br/>
+                <input type=submit value="Envoyer"/>
+                <input type=reset value="Recommencer"/>
+            </fieldset>
+            
+        </form>
+ 
+    </body>    
+</html>

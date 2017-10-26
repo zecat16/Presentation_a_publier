@@ -1,0 +1,61 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Le flexbox layout</title> 
+        <style>
+            .flex-container {
+                margin:0;
+                padding:0;
+                list-style: none;
+                height: 1000px;
+                background-color: #EEE;
+                /* Appliquer les préfixes suivants , respectivement pour: */
+                /* Chrome avant v29.0 , + Safari , Opera ... */
+                display:-webkit-flex;
+                /* Mozilla Firefox avant v22.0*/
+                display:-moz-flex;
+                /* IE avant IE11 */
+                display:-ms-flex;
+                
+                /* Pour Container flexbox */
+                display:flex;
+                
+                /* flex-direction: row;
+                flex-wrap: wrap; */
+                flex-flow:row wrap;
+                justify-content: space-between;
+                
+                align-content:flex-start;
+                
+            }
+            .flex-item {
+                background-color: #27AE60;
+                padding: 5px;
+                width: 200px;
+                height: 200px;
+                margin-top:10px;
+                
+                line-height: 150px;
+                text-align: center;
+                color: white;
+                font-size: 3rem;
+                /* Transformation du carré en rond ! */
+                border-radius:50%;
+            }
+        </style>       
+    </head>
+
+    <body>
+        <ul class="flex-container">
+            <li class="flex-item">1</li>
+            <li class="flex-item">2</li>
+            <li class="flex-item">3</li>
+            <li class="flex-item">4</li>
+            <li class="flex-item">5</li>
+            <li class="flex-item">6</li>
+            
+        </ul>
+
+    </body>    
+</html>
